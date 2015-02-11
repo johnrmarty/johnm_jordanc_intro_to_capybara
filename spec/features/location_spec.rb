@@ -27,20 +27,11 @@ describe 'User can CRUD locations' do
 
   scenario 'User can view a show page for a location' do
     
-    visit '/'
+    @location = Location.create(:name => 'g6', :address => "1062 delaware", :zipcode => 91292)
+    visit "/locations/#{@location.id}"
 
-    click_on "New Location"
 
-    #filling out form for location
-    fill_in 'location[name]', :with => "boston"
-    fill_in 'location[address]', with: "New Address"
-    fill_in 'location[zipcode]', with: "90210"
-
-    #submitting form to create a location
-    click_button "Create Location"
-    click_on "boston"
-
-    expect(page).to have_content("boston")
+    expect(page).to have_content("g6")
 
   end
 

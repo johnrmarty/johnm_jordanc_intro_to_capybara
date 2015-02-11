@@ -12,3 +12,5 @@ describe 'User can visit homepage' do
   end
 
 end
+
+
