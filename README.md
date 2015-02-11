@@ -49,3 +49,4 @@ Capybara cheat sheet: https://gist.github.com/zhengjia/428105
 - Users can see a show page for an event.
 - Users can edit an event.
 - Users can delete an event.
+# johnm_jordanc_intro_to_capybara
